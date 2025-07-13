@@ -19,7 +19,8 @@ function NavBar() {
             <NavLink to="/offers" onClick={closeDrawer} className={({ isActive }) => navLinkClass(isActive)} >Special Offers</NavLink>
             <NavLink to="/restaurants" onClick={closeDrawer} className={({ isActive }) => navLinkClass(isActive)} >Restaurants</NavLink>
             <NavLink to="/orders" onClick={closeDrawer} className={({ isActive }) => navLinkClass(isActive)} >Track Orders</NavLink>
-            <NavLink to="/log-in" onClick={closeDrawer} className={({ isActive }) => `px-4 text-white py-2 rounded-2xl hover:bg-orange-500 ${isActive ? 'bg-orange-500' : 'bg-black'}`} >Login/Signup</NavLink>
+            <NavLink to="/log-in" onClick={closeDrawer} className={({ isActive }) => `px-4 text-white py-2 rounded-2xl border hover:border-orange-500 flex gap-1.5 items-center ${isActive ? 'border border-orange-500 text-black' : 'bg-black'}`} ><i class="fa fa-user-circle text-orange-500 hover:text-black" aria-hidden="true"></i>
+            <span>Login/Signup</span></NavLink>
         </>
     )
 
