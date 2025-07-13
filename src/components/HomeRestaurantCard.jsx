@@ -3,11 +3,10 @@ import { Card } from "antd";
 const HomeRestaurantCard = ({ image, name, offer }) => {
     return (
         <Card
-            className="relative overflow-hidden rounded-xl text-white shadow-lg"
+            className="relative overflow-hidden rounded-xl text-white shadow-lg w-100 sm:w-auto sm:h-auto"
             style={{
-                width: "auto",
-                minWidth: 300,
-                height: 250,
+                minWidth: 200,
+                minHeight: 200,
                 backgroundImage: `url(${image})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
